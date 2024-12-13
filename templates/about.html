@@ -264,43 +264,51 @@
   </div>
 </section>
 
-  <!-- Mission and Vision Section -->
-<section id="mission-vision" class="py-20 bg-gray-50 text-black flex items-center justify-center min-h-screen">
-  <div class="container mx-auto px-6 text-center space-y-8">
-    <h2 class="text-5xl font-extrabold tracking-tight leading-tight mb-6 text-shadow-md animate__animated animate__fadeIn animate__delay-1s">Our Mission & Vision</h2>
-    
-    <div class="lg:flex gap-12 justify-center">
-      <!-- Mission -->
-      <div class="p-8 bg-gradient-to-l from-gray-600 via-gray-300 to-gray-600 rounded-lg shadow-xl w-full max-w-md">
-        <h3 class="text-3xl font-bold mb-4">Our Mission</h3>
-        <p class="text-xl opacity-90 mb-4">
-          Our mission is to empower businesses by providing innovative, scalable, and high-quality digital solutions. We strive to help businesses navigate the challenges of the digital world, driving growth and success through technology and innovation.
+<!-- Mission and Vision Section -->
+<section id="mission-vision" class="py-20 bg-gray-900 text-white flex items-center justify-center min-h-screen relative">
+  <!-- Background Overlay -->
+  <div class="absolute inset-0 bg-gradient-to-b from-gray-800 to-gray-900 opacity-90"></div>
+  
+  <div class="relative container mx-auto px-6 text-center space-y-16">
+    <!-- Section Title -->
+    <h2 class="text-5xl font-extrabold tracking-tight leading-tight text-orange-400">
+      Our Mission & Vision
+    </h2>
+
+    <!-- Mission and Vision Cards -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+      <!-- Mission Card -->
+      <div class="p-8 bg-gradient-to-r from-gray-700 via-gray-800 to-gray-900 rounded-lg shadow-2xl transform hover:scale-105 transition-transform duration-300">
+        <h3 class="text-3xl font-bold text-orange-300 mb-4">Our Mission</h3>
+        <p class="text-lg text-gray-300 mb-4">
+          To empower businesses by delivering innovative, scalable, and high-quality digital solutions. We drive growth and success through creativity, technology, and collaboration.
         </p>
-        <p class="text-xl opacity-80">
-          We focus on delivering cutting-edge solutions that not only meet the needs of today but also pave the way for future opportunities in the digital era. By fostering a culture of collaboration, creativity, and excellence, we aim to support our clients in their journey towards digital transformation.
+        <p class="text-lg text-gray-400">
+          We are committed to navigating the challenges of the digital era, fostering excellence, and creating solutions that ensure long-term value for our clients.
         </p>
       </div>
 
-      <!-- Vision -->
-      <div class="p-8 bg-gradient-to-r from-gray-600 via-gray-300 to-gray-600 rounded-lg shadow-xl w-full max-w-md mt-8 lg:mt-0">
-        <h3 class="text-3xl font-bold mb-4">Our Vision</h3>
-        <p class="text-xl opacity-90 mb-4">
-          Our vision is to be a global leader in digital transformation. We aim to create impactful and innovative solutions that revolutionize the way businesses operate and thrive in a rapidly evolving digital world.
+      <!-- Vision Card -->
+      <div class="p-8 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-700 rounded-lg shadow-2xl transform hover:scale-105 transition-transform duration-300">
+        <h3 class="text-3xl font-bold text-orange-300 mb-4">Our Vision</h3>
+        <p class="text-lg text-gray-300 mb-4">
+          To become a global leader in digital transformation by delivering impactful and innovative solutions. We aim to revolutionize the way businesses operate in a dynamic digital world.
         </p>
-        <p class="text-xl opacity-80">
-          By constantly pushing the boundaries of technology, we envision a future where businesses seamlessly integrate digital tools and strategies, enabling them to adapt, grow, and succeed in an ever-changing landscape. Our commitment to excellence drives us to be at the forefront of this transformation, making a lasting impact on the global market.
+        <p class="text-lg text-gray-400">
+          Through cutting-edge technologies and a forward-thinking approach, we envision a seamless future where businesses adapt, thrive, and grow in the digital landscape.
         </p>
       </div>
     </div>
-    
+
     <!-- Call to Action Button -->
-    <div class="mt-10 text-center">
-      <a href="{{ url_for('services') }}" class="inline-block py-3 px-6 bg-blue-600 text-white font-semibold rounded-md text-xl hover:bg-blue-500 transition duration-300 ease-in-out">
+    <div class="mt-10">
+      <a href="{{ url_for('services') }}" class="py-3 px-8 bg-orange-500 text-gray-900 font-semibold rounded-full text-xl hover:bg-yellow-400 transition-all duration-300 transform hover:scale-110">
         Explore Our Services
       </a>
     </div>
   </div>
 </section>
+
 
 
   <!-- Core Values Section -->

@@ -2,36 +2,36 @@
     <header id="navbar" class="bg-transparent fixed top-0 w-full z-30 transition-all duration-300 border-b border-gray-300">
       <div class="container mx-auto flex items-center justify-between py-2 px-6">
         <!-- Logo -->
-        <a href="{{ url_for('index') }}" class="text-2xl font-extrabold text-gray-600 uppercase tracking-wide hover:text-yellow-500 transition-all duration-300">
+        <a href="{{ url_for('index') }}" class="text-2xl font-extrabold text-orange-700 uppercase tracking-wide hover:text-yellow-500 transition-all duration-300">
           Stones Web
         </a>
         <!-- Mobile Menu Toggle -->
-        <button id="menu-toggle" class="text-black md:hidden focus:outline-none">
+        <button id="menu-toggle" class="text-orange-500 md:hidden focus:outline-none">
           <i class="fas fa-bars text-2xl"></i>
         </button>
         <!-- Desktop Menu -->
         <nav id="menu" class="hidden md:flex space-x-8">
-          <a href="{{ url_for('index') }}" class="uppercase text-black font-semibold hover:text-yellow-500 relative group">
+          <a href="{{ url_for('index') }}" class="uppercase text-orange-500 font-semibold hover:text-yellow-500 relative group">
             Home
             <span class="absolute left-0 bottom-[-5px] w-0 h-1 bg-yellow-500 group-hover:w-full transition-all duration-300"></span>
           </a>
-          <a href="{{ url_for('about') }}" class="uppercase text-black font-semibold hover:text-yellow-500 relative group">
+          <a href="{{ url_for('about') }}" class="uppercase text-orange-500 font-semibold hover:text-yellow-500 relative group">
             About
             <span class="absolute left-0 bottom-[-5px] w-0 h-1 bg-yellow-500 group-hover:w-full transition-all duration-300"></span>
           </a>
-          <a href="{{ url_for('services') }}" class="uppercase text-black font-semibold hover:text-yellow-500 relative group">
+          <a href="{{ url_for('services') }}" class="uppercase text-orange-500 font-semibold hover:text-yellow-500 relative group">
             Services
             <span class="absolute left-0 bottom-[-5px] w-0 h-1 bg-yellow-500 group-hover:w-full transition-all duration-300"></span>
           </a>
-          <a href="{{ url_for('products') }}" class="uppercase text-black font-semibold hover:text-yellow-500 relative group">
+          <!-- <a href="{{ url_for('products') }}" class="uppercase text-orange-500 font-semibold hover:text-yellow-500 relative group">
             Products
             <span class="absolute left-0 bottom-[-5px] w-0 h-1 bg-yellow-500 group-hover:w-full transition-all duration-300"></span>
           </a>
-          <a href="{{ url_for('testimonials') }}" class="uppercase text-black font-semibold hover:text-yellow-500 relative group">
+          <a href="{{ url_for('testimonials') }}" class="uppercase text-orange-500 font-semibold hover:text-yellow-500 relative group">
             Testimonials
             <span class="absolute left-0 bottom-[-5px] w-0 h-1 bg-yellow-500 group-hover:w-full transition-all duration-300"></span>
-          </a>
-          <a href="{{ url_for('contact') }}" class="uppercase text-black font-semibold hover:text-yellow-500 relative group">
+          </a> -->
+          <a href="{{ url_for('contact') }}" class="uppercase text-orange-500 font-semibold hover:text-yellow-500 relative group">
             Contact
             <span class="absolute left-0 bottom-[-5px] w-0 h-1 bg-yellow-500 group-hover:w-full transition-all duration-300"></span>
           </a>
@@ -42,8 +42,8 @@
         <a href="{{ url_for('index') }}" class="uppercase block px-6 py-3 hover:bg-yellow-500 hover:text-gray-900 transition-all">Home</a>
         <a href="{{ url_for('about') }}"  class="uppercase block px-6 py-3 hover:bg-yellow-500 hover:text-gray-900 transition-all">About</a>
         <a href="{{ url_for('services') }}"  class="uppercase block px-6 py-3 hover:bg-yellow-500 hover:text-gray-900 transition-all">Services</a>
-        <a href="{{ url_for('products') }}"  class="uppercase block px-6 py-3 hover:bg-yellow-500 hover:text-gray-900 transition-all">Products</a>
-        <a href="{{ url_for('testimonials') }}"  class="uppercase block px-6 py-3 hover:bg-yellow-500 hover:text-gray-900 transition-all">Testimonials</a>
+        <!-- <a href="{{ url_for('products') }}"  class="uppercase block px-6 py-3 hover:bg-yellow-500 hover:text-gray-900 transition-all">Products</a>
+        <a href="{{ url_for('testimonials') }}"  class="uppercase block px-6 py-3 hover:bg-yellow-500 hover:text-gray-900 transition-all">Testimonials</a> -->
         <a href="{{ url_for('contact') }}" class="uppercase block px-6 py-3 hover:bg-yellow-500 hover:text-gray-900 transition-all">Contact</a>
       </div>
     </header>
