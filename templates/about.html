@@ -265,13 +265,13 @@
 </section>
 
   <!-- Mission and Vision Section -->
-<section id="mission-vision" class="py-20 bg-gradient-to-r from-gray-900 via-gray-800 to-black text-white flex items-center justify-center min-h-screen">
+<section id="mission-vision" class="py-20 bg-gray-50 text-black flex items-center justify-center min-h-screen">
   <div class="container mx-auto px-6 text-center space-y-8">
     <h2 class="text-5xl font-extrabold tracking-tight leading-tight mb-6 text-shadow-md animate__animated animate__fadeIn animate__delay-1s">Our Mission & Vision</h2>
     
     <div class="lg:flex gap-12 justify-center">
       <!-- Mission -->
-      <div class="p-8 bg-gradient-to-l from-gray-600 via-gray-900 to-gray rounded-lg shadow-xl w-full max-w-md">
+      <div class="p-8 bg-gradient-to-l from-gray-600 via-gray-300 to-gray-600 rounded-lg shadow-xl w-full max-w-md">
         <h3 class="text-3xl font-bold mb-4">Our Mission</h3>
         <p class="text-xl opacity-90 mb-4">
           Our mission is to empower businesses by providing innovative, scalable, and high-quality digital solutions. We strive to help businesses navigate the challenges of the digital world, driving growth and success through technology and innovation.
@@ -282,7 +282,7 @@
       </div>
 
       <!-- Vision -->
-      <div class="p-8 bg-gradient-to-r from-gray-600 via-gray-900 to-gray rounded-lg shadow-xl w-full max-w-md mt-8 lg:mt-0">
+      <div class="p-8 bg-gradient-to-r from-gray-600 via-gray-300 to-gray-600 rounded-lg shadow-xl w-full max-w-md mt-8 lg:mt-0">
         <h3 class="text-3xl font-bold mb-4">Our Vision</h3>
         <p class="text-xl opacity-90 mb-4">
           Our vision is to be a global leader in digital transformation. We aim to create impactful and innovative solutions that revolutionize the way businesses operate and thrive in a rapidly evolving digital world.
@@ -347,34 +347,51 @@
 </section>
 
 
-  <!-- Why Choose Us Section -->
-  <section id="why-choose-us" class="py-16 bg-gray-100">
-    <div class="container mx-auto px-6 text-center">
-      <h2 class="text-5xl font-bold text-gray-800 mb-6">Why Choose Us?</h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div class="p-6 bg-white rounded-lg shadow-lg">
-          <i class="fas fa-star text-yellow-500 text-4xl mb-4"></i>
-          <h3 class="text-xl font-semibold mb-2">Proven Expertise</h3>
-          <p class="text-lg text-gray-600">
-            Years of experience in delivering innovative solutions.
-          </p>
+<!-- Why Choose Us Section -->
+<section style="height: 100vh;" id="why-choose-us" class="py-20 bg-gradient-to-b from-blue-900 to-gray-800 text-white">
+  <div style="height: 100%; margin:50px;" class="container mx-auto px-6 text-center">
+    <h2 class="text-5xl font-extrabold mb-12 tracking-wide leading-snug">
+      Why Choose Us?
+    </h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
+      <!-- Proven Expertise -->
+      <div class="p-8 bg-blue-800 border border-blue-700 rounded-lg shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-xl">
+        <div class="flex justify-center mb-6">
+          <i class="fas fa-star text-yellow-400 text-5xl"></i>
         </div>
-        <div class="p-6 bg-white rounded-lg shadow-lg">
-          <i class="fas fa-thumbs-up text-green-500 text-4xl mb-4"></i>
-          <h3 class="text-xl font-semibold mb-2">Client-Centric</h3>
-          <p class="text-lg text-gray-600">
-            Focused on understanding and exceeding client expectations.
-          </p>
+        <h3 class="text-2xl font-semibold mb-4">Proven Expertise</h3>
+        <p class="text-lg text-gray-300">
+          With years of experience and a track record of success, we deliver cutting-edge solutions tailored to your needs.
+        </p>
+      </div>
+
+      <!-- Client-Centric -->
+      <div class="p-8 bg-blue-800 border border-blue-700 rounded-lg shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-xl">
+        <div class="flex justify-center mb-6">
+          <i class="fas fa-thumbs-up text-green-400 text-5xl"></i>
         </div>
-        <div class="p-6 bg-white rounded-lg shadow-lg">
-          <i class="fas fa-trophy text-blue-500 text-4xl mb-4"></i>
-          <h3 class="text-xl font-semibold mb-2">Exceptional Results</h3>
-          <p class="text-lg text-gray-600">
-            Delivering measurable outcomes and value-driven solutions.
-          </p>
+        <h3 class="text-2xl font-semibold mb-4">Client-Centric</h3>
+        <p class="text-lg text-gray-300">
+          We prioritize understanding your unique goals and challenges to provide personalized, impactful solutions.
+        </p>
+      </div>
+
+      <!-- Exceptional Results -->
+      <div class="p-8 bg-blue-800 border border-blue-700 rounded-lg shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-xl">
+        <div class="flex justify-center mb-6">
+          <i class="fas fa-trophy text-yellow-400 text-5xl"></i>
         </div>
+        <h3 class="text-2xl font-semibold mb-4">Exceptional Results</h3>
+        <p class="text-lg text-gray-300">
+          Delivering measurable outcomes that drive growth and success, ensuring you achieve maximum return on investment.
+        </p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
+{% include 'footer.html' %}
+
+
 </body>
 </html>
