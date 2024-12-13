@@ -1,113 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    {% include 'head.html' %}
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    {% include 'head.html' %}
 </head>
-<body>
-    <!-- About Us Section -->
-    <section id="about" class="h-screen bg-gray-100 flex items-center justify-center relative">
-        <!-- Content -->
-        <div class="text-center px-6">
-            <h2 class="text-5xl font-extrabold text-gray-800 mb-6">About Stones Web</h2>
-            <p class="text-lg md:text-xl max-w-3xl mx-auto text-gray-700 leading-relaxed">
-                Stones Web empowers businesses and builders with innovative web solutions, from custom development to ERP systems. 
-                Our mission is to drive digital transformation and help you excel in the modern landscape.
-            </p>
-        </div>
-    </section>
+<body class="bg-gray-900 text-white">
+{% include 'header.html' %}
+    
 
-    <!-- Mission Section -->
-    <section id="mission" class="py-20 bg-gray-50">
-        <div class="container mx-auto text-center px-6">
-            <h2 class="text-4xl font-bold text-purple-600 mb-6">Our Mission</h2>
-            <p class="text-lg text-gray-700 leading-relaxed max-w-4xl mx-auto">
-                At Stones Web, our mission is to deliver innovative, reliable, and customer-focused web solutions. We aim to be the driving force behind your digital success.
-            </p>
-        </div>
-    </section>
 
-    <!-- Our Values Section -->
-    <section id="values" class="py-20 bg-white">
-        <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
-            <!-- Value 1 -->
-            <div class="text-center">
-                <img src="/static/images/innovation.svg" alt="Innovation" class="w-20 h-20 mx-auto mb-4">
-                <h3 class="text-2xl font-semibold text-purple-600 mb-2">Innovation</h3>
-                <p class="text-gray-600">We embrace cutting-edge technology to deliver forward-thinking solutions.</p>
+<!-- Contact Page -->
+<section id="contact" class="bg-gray-900 text-white py-20">
+    <!-- Heading Section -->
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-4xl font-extrabold text-yellow-300 mb-12">Get In Touch</h2>
+      <p class="text-lg opacity-80">We'd love to hear from you! Whether you have a question, feedback, or are interested in working with us, feel free to reach out. We are here to help you.</p>
+    </div>
+  </section>
+  
+  <!-- Contact Form Section -->
+  <section id="contact-form" class="py-20 bg-gray-800 text-white">
+    <div class="container mx-auto px-6">
+      <div class="lg:flex justify-center">
+        <div class="w-full lg:w-1/2 bg-gray-700 p-8 rounded-lg shadow-xl">
+          <h3 class="text-3xl font-semibold mb-6 text-center">Contact Form</h3>
+          <form action="#" method="POST">
+            <!-- Name -->
+            <div class="mb-6">
+              <label for="name" class="block text-lg font-semibold mb-2">Full Name</label>
+              <input type="text" id="name" name="name" class="w-full p-4 rounded-lg bg-gray-600 text-white border-2 border-transparent focus:outline-none focus:border-yellow-300" placeholder="Your Name" required>
             </div>
-            <!-- Value 2 -->
-            <div class="text-center">
-                <img src="/static/images/reliability.svg" alt="Reliability" class="w-20 h-20 mx-auto mb-4">
-                <h3 class="text-2xl font-semibold text-purple-600 mb-2">Reliability</h3>
-                <p class="text-gray-600">Dependable solutions tailored to your unique business needs.</p>
+  
+            <!-- Email -->
+            <div class="mb-6">
+              <label for="email" class="block text-lg font-semibold mb-2">Email Address</label>
+              <input type="email" id="email" name="email" class="w-full p-4 rounded-lg bg-gray-600 text-white border-2 border-transparent focus:outline-none focus:border-yellow-300" placeholder="Your Email" required>
             </div>
-            <!-- Value 3 -->
-            <div class="text-center">
-                <img src="/static/images/customer-focus.svg" alt="Customer Focus" class="w-20 h-20 mx-auto mb-4">
-                <h3 class="text-2xl font-semibold text-purple-600 mb-2">Customer Focus</h3>
-                <p class="text-gray-600">We prioritize your success and satisfaction above all.</p>
+  
+            <!-- Message -->
+            <div class="mb-6">
+              <label for="message" class="block text-lg font-semibold mb-2">Your Message</label>
+              <textarea id="message" name="message" rows="4" class="w-full p-4 rounded-lg bg-gray-600 text-white border-2 border-transparent focus:outline-none focus:border-yellow-300" placeholder="Your Message" required></textarea>
             </div>
+  
+            <!-- Submit Button -->
+            <button type="submit" class="w-full bg-purple-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-purple-700 transition duration-300 ease-in-out">
+              Send Message
+            </button>
+          </form>
         </div>
-    </section>
-
-    <!-- Meet the Team Section -->
-    <section id="team" class="py-20 bg-gray-100">
-        <div class="container mx-auto text-center px-6">
-            <h2 class="text-4xl font-bold text-purple-600 mb-6">Meet the Team</h2>
-            <p class="text-lg text-gray-700 mb-12">Our dedicated team ensures every project is a success.</p>
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Team Member 1 -->
-                <div class="text-center">
-                    <img src="/static/images/team-member-1.jpg" alt="Rohit Sharma" class="w-32 h-32 rounded-full mx-auto mb-4">
-                    <h3 class="text-xl font-semibold">Rohit Sharma</h3>
-                    <p class="text-gray-600">CEO & Founder</p>
-                </div>
-
-                <!-- Team Member 2 -->
-                <div class="text-center">
-                    <img src="/static/images/team-member-2.jpg" alt="Priya Patel" class="w-32 h-32 rounded-full mx-auto mb-4">
-                    <h3 class="text-xl font-semibold">Priya Patel</h3>
-                    <p class="text-gray-600">Lead Developer</p>
-                </div>
-
-                <!-- Team Member 3 -->
-                <div class="text-center">
-                    <img src="/static/images/team-member-3.jpg" alt="Rahul Mehta" class="w-32 h-32 rounded-full mx-auto mb-4">
-                    <h3 class="text-xl font-semibold">Rahul Mehta</h3>
-                    <p class="text-gray-600">Project Manager</p>
-                </div>
-            </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Contact Information Section -->
+  <section id="contact-info" class="py-20 bg-gray-900 text-white">
+    <div class="container mx-auto px-6 text-center">
+      <h3 class="text-3xl font-semibold mb-6">Contact Information</h3>
+      <div class="lg:flex lg:justify-center gap-16">
+        <div class="w-full lg:w-1/3">
+          <h4 class="text-xl font-semibold mb-4">Location</h4>
+          <p>Chinchwad, Pune - 411033, INDIA</p>
         </div>
-    </section>
-
-    <!-- Why Choose Us Section -->
-    <section id="why-us" class="py-20 bg-purple-600 text-white">
-        <div class="container mx-auto px-6 text-center">
-            <h2 class="text-4xl font-bold mb-6">Why Choose Stones Web?</h2>
-            <p class="text-lg max-w-3xl mx-auto mb-12">Experience excellence in digital solutions with our expert team and customer-focused approach.</p>
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Feature 1 -->
-                <div class="p-6 bg-white text-purple-600 rounded-lg">
-                    <h3 class="text-2xl font-semibold mb-2">Custom Solutions</h3>
-                    <p class="text-gray-600">Tailored to meet your goals and expectations.</p>
-                </div>
-
-                <!-- Feature 2 -->
-                <div class="p-6 bg-white text-purple-600 rounded-lg">
-                    <h3 class="text-2xl font-semibold mb-2">24/7 Support</h3>
-                    <p class="text-gray-600">Always here to assist, no matter the time.</p>
-                </div>
-
-                <!-- Feature 3 -->
-                <div class="p-6 bg-white text-purple-600 rounded-lg">
-                    <h3 class="text-2xl font-semibold mb-2">Affordable Pricing</h3>
-                    <p class="text-gray-600">Value-driven solutions for every budget.</p>
-                </div>
-            </div>
+        <div class="w-full lg:w-1/3">
+          <h4 class="text-xl font-semibold mb-4">Phone</h4>
+          <p><a href="tel:+917499273903" class="text-red-400 hover:text-red-300 transition duration-300 ease-in-out">+91 7499273903</a></p>
         </div>
-    </section>
+        <div class="w-full lg:w-1/3">
+          <h4 class="text-xl font-semibold mb-4">Email</h4>
+          <p><a href="mailto:rohitshinde3903@gmail.com" class="text-red-400 hover:text-red-300 transition duration-300 ease-in-out">rohitshinde3903@gmail.com</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Google Map Section -->
+  <section id="google-map" class="py-20 h-screen bg-gray-800">
+    <div class="container mb-5  mt-0 h-full mx-auto px-6 text-center">
+      <h3 class="text-3xl font-semibold mb-6 text-white">Find Us On The Map</h3>
+      <div class="w-full py-5 h-full max-w-3xl mx-auto">
+        <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3780.6599848516244!2d73.7614174751944!3d18.634357082481447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b9443a7250c3%3A0x631fbce73fd2becd!2sStones%20Web%20Services!5e0!3m2!1sen!2sin!4v1734091435380!5m2!1sen!2sin" height="100%" width="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>       -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3780.6599848516244!2d73.7614174751944!3d18.634357082481447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b9443a7250c3%3A0x631fbce73fd2becd!2sStones%20Web%20Services!5e0!3m2!1sen!2sin!4v1734091435380!5m2!1sen!2sin" height="100%" width="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>      
+        
+    </div>
+    </div>
+  </section>
+  
+  {% include 'footer.html' %}
+  
+
+
+
 </body>
 </html>

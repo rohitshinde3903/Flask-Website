@@ -24,6 +24,7 @@ def testimonials():
 
 @app.route('/contact')
 def contact():
+    
     return render_template('contact.html')
 
 @app.route('/about_rohit')
