@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Services | Industry Solutions</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+
+  <style>
+    .service-section {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      position: relative;
+      overflow: hidden;
+    }
+    .service-section::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.4);
+      z-index: -1;
+    }
+    .service-section img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 1;
+    }
+ 
+    .animate-fadeIn {
+        animation: fadeIn 1.2s ease-out;
+      }
+    
+      .animate-slideUp {
+        opacity: 1;
+        transform: translateY(20px);
+        transition: all 0.5s ease-out;
+      }
+    
+      .opacity-100 {
+        opacity: 1;
+      }
+    
+      .translate-y-0 {
+        transform: translateY(0);
+      }
+    
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+  </style>
+
+
+
+
+
+
+
+  {% include 'head.html' %}
+</head>
+<body class="bg-gray-900 text-white">
+{% include 'header.html' %}
+
+{% include 'heroservices.html' %}
+
+
+<!-- Technology Section -->
+<!-- Technology Section -->
+<section style="height: 100%;" id="technology" class="service-section bg-gray-50 py-12">
+    <div style="height: 100%; margin-top: 50px; margin-bottom: 50px;" class="container mx-auto px-4">
+      <div class="text-center mb-12 animate-fadeIn">
+        <h2 class="text-5xl font-bold text-gray-800 mb-4">Web Development Services</h2>
+        <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+          We provide comprehensive web development services that cater to businesses of all sizes. Using the latest technologies and a user-centric approach, we deliver websites that are responsive, fast, and secure, ensuring your online presence makes a lasting impact.
+        </p>
+      </div>
+  
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- React -->
+        <div class="tech-card animate-slideUp">
+          <div class="bg-blue-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto">
+            <img class="fab fa-react text-blue-600 text-4xl" alt="React" class="w-12 h-12">
+          </div>
+          <h3 class="text-xl font-semibold text-gray-800 text-center mt-4">React</h3>
+          <p class="text-gray-600 text-center mt-2">
+            Build dynamic and interactive user interfaces that are fast and scalable using one of the most trusted JavaScript libraries.
+          </p>
+        </div>
+  
+        <!-- Angular -->
+        <div class="tech-card animate-slideUp">
+          <div class="bg-red-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto">
+            <img class="fab fa-angular text-blue-600 text-4xl" alt="Angular" class="w-12 h-12">
+          </div>
+          <h3 class="text-xl font-semibold text-gray-800 text-center mt-4">Angular</h3>
+          <p class="text-gray-600 text-center mt-2">
+            Build robust, enterprise-grade applications with Angular, known for its seamless performance and scalability.
+          </p>
+        </div>
+  
+        <!-- Node.js -->
+        <div class="tech-card animate-slideUp">
+          <div class="bg-green-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto">
+            <img class="fab fa-node-js text-blue-600 text-4xl" alt="Node.js" class="w-12 h-12">
+          </div>
+          <h3 class="text-xl font-semibold text-gray-800 text-center mt-4">Node.js</h3>
+          <p class="text-gray-600 text-center mt-2">
+            Leverage the power of Node.js to create fast, scalable, and real-time backend solutions that keep your application ahead of the curve.
+          </p>
+        </div>
+  
+        <!-- E-Commerce -->
+        <div class="tech-card animate-slideUp">
+          <div class="bg-purple-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto">
+            <i class="fas fa-shopping-cart text-purple-600 text-4xl"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-800 text-center mt-4">E-Commerce</h3>
+          <p class="text-gray-600 text-center mt-2">
+            From simple online stores to complex multi-vendor platforms, we develop e-commerce solutions tailored to boost your sales.
+          </p>
+        </div>
+  
+        <!-- UI/UX Design -->
+        <div class="tech-card animate-slideUp">
+          <div class="bg-yellow-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto">
+            <i class="fas fa-paint-brush text-yellow-600 text-4xl"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-800 text-center mt-4">UI/UX Design</h3>
+          <p class="text-gray-600 text-center mt-2">
+            Our user-centric designs ensure that your website is not only visually appealing but also provides a seamless and engaging user experience.
+          </p>
+        </div>
+  
+        <!-- SEO Optimization -->
+        <div class="tech-card animate-slideUp">
+          <div class="bg-indigo-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto">
+            <i class="fas fa-search text-indigo-600 text-4xl"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-800 text-center mt-4">SEO Optimization</h3>
+          <p class="text-gray-600 text-center mt-2">
+            Ensure your website ranks high on search engines with our advanced SEO strategies and tools, driving more traffic and visibility.
+          </p>
+        </div>
+      </div>
+  
+     
+    </div>
+  </section>
+  
+   <!-- Animation on Scroll Script -->
+   <script>
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('opacity-100', 'translate-y-0');
+        }
+      });
+    }, { threshold: 0.2 });
+
+    document.querySelectorAll('.tech-card').forEach(card => {
+      card.classList.add('opacity-0', 'translate-y-8', 'transition', 'duration-500');
+      observer.observe(card);
+    });
+  </script>
+
+
+<!-- ERP Solutions Section -->
+<section style="height: 100%;" id="erp-solutions" class="service-section bg-white py-12">
+    <div style="height: 100%; margin-top: 50px; margin-bottom: 50px;" class="container mx-auto px-4">
+      <div class="text-center mb-12 animate-fadeIn">
+        <h2 class="text-5xl font-bold text-gray-800 mb-4">ERP Solutions</h2>
+        <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+          Optimize your business operations with our enterprise resource planning systems. Gain efficiency, transparency, and control over every aspect of your workflow.
+        </p>
+      </div>
+  
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Inventory Management -->
+        <div class="tech-card animate-slideUp">
+          <div class="bg-green-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto">
+            <i class="fas fa-warehouse text-green-600 text-4xl"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-800 text-center mt-4">Inventory Management</h3>
+          <p class="text-gray-600 text-center mt-2">
+            Keep track of your inventory in real-time, reduce waste, and optimize stock levels to meet business demands efficiently.
+          </p>
+        </div>
+  
+        <!-- Finance Management -->
+        <div class="tech-card animate-slideUp">
+          <div class="bg-blue-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto">
+            <i class="fas fa-coins text-blue-600 text-4xl"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-800 text-center mt-4">Finance Management</h3>
+          <p class="text-gray-600 text-center mt-2">
+            Manage your finances with precision, automate accounting tasks, and ensure compliance with regulatory standards.
+          </p>
+        </div>
+  
+        <!-- HR Management -->
+        <div class="tech-card animate-slideUp">
+          <div class="bg-yellow-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto">
+            <i class="fas fa-users text-yellow-600 text-4xl"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-800 text-center mt-4">HR Management</h3>
+          <p class="text-gray-600 text-center mt-2">
+            Streamline your HR operations, from payroll to employee performance, with our integrated ERP solutions.
+          </p>
+        </div>
+  
+        <!-- Sales and CRM -->
+        <div class="tech-card animate-slideUp">
+          <div class="bg-purple-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto">
+            <i class="fas fa-chart-line text-purple-600 text-4xl"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-800 text-center mt-4">Sales & CRM</h3>
+          <p class="text-gray-600 text-center mt-2">
+            Enhance customer relationships, track leads, and improve sales performance with our CRM-integrated ERP systems.
+          </p>
+        </div>
+  
+        <!-- Analytics and Reporting -->
+        <div class="tech-card animate-slideUp">
+          <div class="bg-indigo-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto">
+            <i class="fas fa-chart-pie text-indigo-600 text-4xl"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-800 text-center mt-4">Analytics & Reporting</h3>
+          <p class="text-gray-600 text-center mt-2">
+            Make informed decisions with real-time analytics and detailed reports generated directly from your ERP system.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Billing Software Section -->
+  <section style="height: 100%;" id="billing-software" class="service-section bg-gray-50 py-12">
+    <div style="height: 100%; margin-top: 50px; margin-bottom:80px;" class="container mx-auto px-4">
+      <div class="text-center mb-12 animate-fadeIn">
+        <h2 class="text-5xl font-bold text-gray-800 mb-4">Billing Software</h2>
+        <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+          Streamline your financial operations with our advanced billing systems. Featuring automation and analytics, we simplify your revenue management processes.
+        </p>
+      </div>
+  
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Automated Invoicing -->
+        <div class="tech-card animate-slideUp">
+          <div class="bg-blue-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto">
+            <i class="fas fa-file-invoice text-blue-600 text-4xl"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-800 text-center mt-4">Automated Invoicing</h3>
+          <p class="text-gray-600 text-center mt-2">
+            Generate and send invoices automatically, reducing manual errors and saving valuable time.
+          </p>
+        </div>
+  
+        <!-- Payment Tracking -->
+        <div class="tech-card animate-slideUp">
+          <div class="bg-green-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto">
+            <i class="fas fa-money-check text-green-600 text-4xl"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-800 text-center mt-4">Payment Tracking</h3>
+          <p class="text-gray-600 text-center mt-2">
+            Keep track of payments received and pending, ensuring smooth cash flow and financial transparency.
+          </p>
+        </div>
+  
+        <!-- Analytics and Reporting -->
+        <div class="tech-card animate-slideUp">
+          <div class="bg-yellow-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto">
+            <i class="fas fa-chart-bar text-yellow-600 text-4xl"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-800 text-center mt-4">Analytics & Reporting</h3>
+          <p class="text-gray-600 text-center mt-2">
+            Access detailed insights and reports on your billing activities to make informed financial decisions.
+          </p>
+        </div>
+  
+        <!-- Multi-Currency Support -->
+        <div class="tech-card animate-slideUp">
+          <div class="bg-purple-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto">
+            <i class="fas fa-globe text-purple-600 text-4xl"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-800 text-center mt-4">Multi-Currency Support</h3>
+          <p class="text-gray-600 text-center mt-2">
+            Seamlessly handle transactions in multiple currencies to cater to global clients.
+          </p>
+        </div>
+  
+        <!-- Secure Data Storage -->
+        <div class="tech-card animate-slideUp">
+          <div class="bg-red-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto">
+            <i class="fas fa-shield-alt text-red-600 text-4xl"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-800 text-center mt-4">Secure Data Storage</h3>
+          <p class="text-gray-600 text-center mt-2">
+            Keep your sensitive billing data secure with advanced encryption and reliable storage solutions.
+          </p>
+        </div>
+  
+        <!-- User-Friendly Interface -->
+        <div class="tech-card animate-slideUp">
+          <div class="bg-teal-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto">
+            <i class="fas fa-laptop text-teal-600 text-4xl"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-800 text-center mt-4">User-Friendly Interface</h3>
+          <p class="text-gray-600 text-center mt-2">
+            Easily navigate and manage your billing software with an intuitive, user-friendly design.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <section style="height: 100%;" id="mobile-app-development" class="service-section bg-gray-50 py-12">
+    <div style="height: 100%; margin-top: 50px; margin-bottom: 50px;" class="container mx-auto px-4">
+      <div class="text-center mb-12 animate-fadeIn">
+        <h2 class="text-5xl font-bold text-gray-800 mb-4">Mobile App Development</h2>
+        <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+          Transform your ideas into reality with feature-rich and user-friendly mobile applications. We specialize in native and cross-platform solutions for iOS and Android.
+        </p>
+      </div>
+  
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Custom App Design -->
+        <div class="tech-card animate-slideUp">
+          <div class="bg-blue-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto">
+            <i class="fas fa-paint-brush text-blue-600 text-4xl"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-800 text-center mt-4">Custom App Design</h3>
+          <p class="text-gray-600 text-center mt-2">
+            Craft stunning, user-centric designs tailored to your brand and audience needs.
+          </p>
+        </div>
+  
+        <!-- Native App Development -->
+        <div class="tech-card animate-slideUp">
+          <div class="bg-green-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto">
+            <i class="fas fa-apple-alt text-green-600 text-4xl"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-800 text-center mt-4">Native App Development</h3>
+          <p class="text-gray-600 text-center mt-2">
+            Build high-performance apps for iOS and Android with platform-specific development.
+          </p>
+        </div>
+  
+        <!-- Cross-Platform Apps -->
+        <div class="tech-card animate-slideUp">
+          <div class="bg-yellow-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto">
+            <i class="fas fa-code-branch text-yellow-600 text-4xl"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-800 text-center mt-4">Cross-Platform Apps</h3>
+          <p class="text-gray-600 text-center mt-2">
+            Develop apps that work seamlessly across multiple devices, reducing costs and time.
+          </p>
+        </div>
+  
+        <!-- Backend Integration -->
+        <div class="tech-card animate-slideUp">
+          <div class="bg-purple-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto">
+            <i class="fas fa-server text-purple-600 text-4xl"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-800 text-center mt-4">Backend Integration</h3>
+          <p class="text-gray-600 text-center mt-2">
+            Seamlessly integrate your app with powerful backend systems for dynamic functionality.
+          </p>
+        </div>
+  
+        <!-- App Store Deployment -->
+        <div class="tech-card animate-slideUp">
+          <div class="bg-red-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto">
+            <i class="fas fa-cloud-upload-alt text-red-600 text-4xl"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-800 text-center mt-4">App Store Deployment</h3>
+          <p class="text-gray-600 text-center mt-2">
+            Publish your app to the App Store and Play Store with expert guidance and support.
+          </p>
+        </div>
+  
+        <!-- Post-Launch Support -->
+        <div class="tech-card animate-slideUp">
+          <div class="bg-teal-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto">
+            <i class="fas fa-tools text-teal-600 text-4xl"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-800 text-center mt-4">Post-Launch Support</h3>
+          <p class="text-gray-600 text-center mt-2">
+            Ensure smooth operations with ongoing updates, maintenance, and troubleshooting.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <section style="height: 100%;" id="digital-marketing" class="service-section bg-gray-50 py-12">
+    <div style="height: 100%; margin-top: 50px; margin-bottom: 50px;" class="container mx-auto px-4">
+      <div class="text-center mb-12 animate-fadeIn">
+        <h2 class="text-5xl font-bold text-gray-800 mb-4">Digital Marketing</h2>
+        <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+          Elevate your brand with our digital marketing expertise. From SEO and social media campaigns to PPC advertising, we help you reach your audience effectively.
+        </p>
+      </div>
+  
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- SEO Optimization -->
+        <div class="tech-card animate-slideUp">
+          <div class="bg-blue-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto">
+            <i class="fas fa-search text-blue-600 text-4xl"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-800 text-center mt-4">SEO Optimization</h3>
+          <p class="text-gray-600 text-center mt-2">
+            Boost your search engine rankings and improve organic traffic with tailored SEO strategies.
+          </p>
+        </div>
+  
+        <!-- Social Media Marketing -->
+        <div class="tech-card animate-slideUp">
+          <div class="bg-green-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto">
+            <i class="fas fa-share-alt text-green-600 text-4xl"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-800 text-center mt-4">Social Media Marketing</h3>
+          <p class="text-gray-600 text-center mt-2">
+            Engage your audience and build brand awareness with strategic social media campaigns.
+          </p>
+        </div>
+  
+        <!-- PPC Advertising -->
+        <div class="tech-card animate-slideUp">
+          <div class="bg-yellow-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto">
+            <i class="fas fa-ad text-yellow-600 text-4xl"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-800 text-center mt-4">PPC Advertising</h3>
+          <p class="text-gray-600 text-center mt-2">
+            Maximize ROI with targeted pay-per-click campaigns that drive conversions.
+          </p>
+        </div>
+  
+        <!-- Content Marketing -->
+        <div class="tech-card animate-slideUp">
+          <div class="bg-purple-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto">
+            <i class="fas fa-pen-nib text-purple-600 text-4xl"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-800 text-center mt-4">Content Marketing</h3>
+          <p class="text-gray-600 text-center mt-2">
+            Create compelling content to attract and retain your target audience effectively.
+          </p>
+        </div>
+  
+        <!-- Email Campaigns -->
+        <div class="tech-card animate-slideUp">
+          <div class="bg-red-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto">
+            <i class="fas fa-envelope text-red-600 text-4xl"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-800 text-center mt-4">Email Campaigns</h3>
+          <p class="text-gray-600 text-center mt-2">
+            Develop personalized email strategies to nurture leads and boost customer retention.
+          </p>
+        </div>
+  
+        <!-- Analytics & Reporting -->
+        <div class="tech-card animate-slideUp">
+          <div class="bg-teal-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto">
+            <i class="fas fa-chart-pie text-teal-600 text-4xl"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-800 text-center mt-4">Analytics & Reporting</h3>
+          <p class="text-gray-600 text-center mt-2">
+            Gain insights into campaign performance with detailed analytics and actionable reports.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section style="height: 100%;" id="enterprise-solutions" class="service-section bg-gray-50 py-12">
+    <div style="height: 100%; margin-top: 50px; margin-bottom: 50px;" class="container mx-auto px-4">
+      <div class="text-center mb-12 animate-fadeIn">
+        <h2 class="text-5xl font-bold text-gray-800 mb-4">Enterprise Solutions</h2>
+        <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+          Empower your business with our comprehensive enterprise solutions. From cloud computing and technical support to bespoke software development, we provide tools and services that drive innovation and operational excellence.
+        </p>
+      </div>
+  
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Cloud Solutions -->
+        <div class="tech-card animate-slideUp">
+          <div class="bg-purple-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto">
+            <i class="fas fa-cloud text-purple-600 text-4xl"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-800 text-center mt-4">Cloud Solutions</h3>
+          <p class="text-gray-600 text-center mt-2">
+            Achieve unparalleled scalability and security. We assist in seamless cloud migrations and efficient management of cloud operations for your business.
+          </p>
+        </div>
+  
+        <!-- Technical Support -->
+        <div class="tech-card animate-slideUp">
+          <div class="bg-cyan-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto">
+            <i class="fas fa-headset text-cyan-600 text-4xl"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-800 text-center mt-4">Technical Support</h3>
+          <p class="text-gray-600 text-center mt-2">
+            Rely on our 24/7 technical support to keep your systems running smoothly. We resolve IT challenges swiftly and effectively.
+          </p>
+        </div>
+  
+        <!-- Custom Development -->
+        <div class="tech-card animate-slideUp">
+          <div class="bg-gray-200 rounded-full w-20 h-20 flex items-center justify-center mx-auto">
+            <i class="fas fa-cogs text-gray-600 text-4xl"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-800 text-center mt-4">Custom Development</h3>
+          <p class="text-gray-600 text-center mt-2">
+            Tailored software solutions to meet your business requirements. From idea to deployment, we deliver excellence at every step.
+          </p>
+        </div>
+  
+        <!-- Cybersecurity -->
+        <div class="tech-card animate-slideUp">
+          <div class="bg-red-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto">
+            <i class="fas fa-shield-alt text-red-600 text-4xl"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-800 text-center mt-4">Cybersecurity</h3>
+          <p class="text-gray-600 text-center mt-2">
+            Protect your business with our robust cybersecurity solutions. We safeguard your data and systems against cyber threats.
+          </p>
+        </div>
+  
+        <!-- Data Analytics -->
+        <div class="tech-card animate-slideUp">
+          <div class="bg-blue-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto">
+            <i class="fas fa-chart-pie text-blue-600 text-4xl"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-800 text-center mt-4">Data Analytics</h3>
+          <p class="text-gray-600 text-center mt-2">
+            Unlock actionable insights with our advanced data analytics services. Make informed decisions to drive business growth.
+          </p>
+        </div>
+  
+        <!-- IT Consulting -->
+        <div class="tech-card animate-slideUp">
+          <div class="bg-green-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto">
+            <i class="fas fa-lightbulb text-green-600 text-4xl"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-800 text-center mt-4">IT Consulting</h3>
+          <p class="text-gray-600 text-center mt-2">
+            Optimize your IT infrastructure with expert guidance. Align technology with your business goals for maximum efficiency.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+{% include 'footer.html' %}
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+</body>
+</html>

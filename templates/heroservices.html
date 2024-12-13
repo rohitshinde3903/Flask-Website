@@ -1,0 +1,91 @@
+<section style="height: 100%;" id="intro-section" class="relative bg-gradient-to-r from-blue-50 to-gray-100 overflow-hidden">
+    <div style="height: 100%;"  class="mt-5 container mx-auto px-4 py-12 relative z-10">
+      <!-- Header Content -->
+      <div class="flex flex-col md:flex-row items-center">
+        <!-- Text Content -->
+        <div class="w-full md:w-1/2 text-center md:text-left animate-fadeIn">
+          <h1 class="text-6xl font-bold text-gray-800 mb-6 leading-snug">
+            Unlock Your Business Potential with Our Services
+          </h1>
+          <p class="text-lg text-gray-600 mb-8 max-w-lg">
+            From cloud solutions to advanced analytics and tailored development, our services are designed to elevate your business efficiency, security, and growth. Let us guide you through the next steps in digital transformation.
+          </p>
+          <a href="#services" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg text-lg font-medium">
+            Explore Our Services
+          </a>
+        </div>
+        <!-- Image Content -->
+        <div class="w-full md:w-1/2 mt-5">
+          <img src="/static/images/bgrowth.jpg" alt="Business Growth" class="rounded-lg shadow-lg">
+        </div>
+      </div>
+  
+      <!-- Charts and Stats Section -->
+      <div class="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Comparison Chart -->
+        <div class="bg-white p-6 rounded-lg shadow-lg animate-slideUp">
+          <h3 class="text-2xl font-semibold text-gray-800 mb-4">Service Impact on Business</h3>
+          <canvas id="impactChart" class="w-full h-64"></canvas>
+        </div>
+        <!-- Key Stats -->
+        <div class="bg-white p-6 rounded-lg shadow-lg animate-slideUp">
+          <h3 class="text-2xl font-semibold text-gray-800 mb-4">Why Choose Us?</h3>
+          <ul class="list-none space-y-4">
+            <li class="flex items-start">
+              <i class="fas fa-check-circle text-green-500 text-2xl mr-4"></i>
+              <span class="text-lg text-gray-600">
+                <strong>80%</strong> of clients see efficiency gains within 6 months.
+              </span>
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-check-circle text-green-500 text-2xl mr-4"></i>
+              <span class="text-lg text-gray-600">
+                <strong>95%</strong> satisfaction rate from our tailored solutions.
+              </span>
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-check-circle text-green-500 text-2xl mr-4"></i>
+              <span class="text-lg text-gray-600">
+                <strong>50%</strong> reduction in IT costs with cloud solutions.
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Decorative Background -->
+    <div class="absolute inset-0 bg-gradient-to-br from-blue-500 to-blue-700 opacity-30"></div>
+  </section>
+  
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script>
+    // Bar chart for service impact
+    const ctx = document.getElementById('impactChart').getContext('2d');
+    new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: ['WEB', 'DATA', 'SOFTWARE', 'ANDROID'],
+        datasets: [{
+          label: 'Efficiency Gain (%)',
+          data: [80, 75, 85, 90],
+          backgroundColor: ['#4CAF50', '#FF9800', '#2196F3', '#9C27B0']
+        }]
+      },
+      options: {
+        responsive: true,
+        scales: {
+          y: {
+            beginAtZero: true,
+            max: 100
+          }
+        },
+        plugins: {
+          legend: {
+            display: false
+          }
+        }
+      }
+    });
+  </script>
+  

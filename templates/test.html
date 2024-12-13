@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero Section</title>
+    <link rel="stylesheet" href="/static/css/abouthero.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hero Section</title>
+        <link rel="stylesheet" href="../static/HeroSection.css">
+        <style>
+            /* Center content on all screen sizes */
+            .hero-section {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                padding: 20px;
+                text-align: center;
+            }
+            .hero-content {
+                max-width: 800px;
+                width: 100%;
+            }
+            .hero-title {
+                font-size: 2rem;
+                margin-bottom: 15px;
+            }
+            .hero-subtitle {
+                font-size: 1.2rem;
+                margin-bottom: 20px;
+            }
+            .button-group a {
+                display: inline-block;
+                margin: 10px 5px;
+                padding: 10px 20px;
+                font-size: 1rem;
+            }
+            @media (max-width: 768px) {
+                .hero-title {
+                    font-size: 1.5rem;
+                }
+                .hero-subtitle {
+                    font-size: 1rem;
+                }
+                .button-group a {
+                    font-size: 0.9rem;
+                    padding: 8px 15px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <section class="hero-section">
+            <div class="container hero-content">
+                <div class="text-content">
+                    <h1 class="hero-title">Innovative Digital Solutions</h1>
+                    <p class="hero-subtitle">
+                        Empowering businesses through advanced web development, IT solutions, and digital transformation.
+                    </p>
+                    <p class="additional-info">
+                        We specialize in creating tailored solutions to meet your unique needs, ensuring seamless integration and optimal performance for your business.
+                    </p>
+                    <div class="button-group">
+                        <a href="#services" class="btn btn-primary hero-button">Our Services</a>
+                        <a href="#contact" class="btn btn-outline-light hero-button-alt">Get a Quote</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+        <script>
+            // GSAP animations for hero elements
+            document.addEventListener("DOMContentLoaded", () => {
+                gsap.from(".hero-title", { opacity: 0.8, y: -50, duration: 1 });
+                gsap.from(".hero-subtitle", { opacity: 0.7, y: 20, delay: 0.5, duration: 1 });
+                gsap.from(".hero-button", { opacity: 0.85, y: 20, delay: 1, duration: 1 });
+                gsap.from(".hero-button-alt", { opacity: 0.85, y: 20, delay: 1.2, duration: 1 });
+            });
+        </script>
+
+        <!-- Hero Section -->
+<section id="hero" style="height: 98vh;" class="bg-gray-800 text-white flex items-center justify-center text-center relative overflow-hidden">
+    <!-- Background Image -->
+    <div class="absolute inset-0 bg-cover bg-center opacity-50" style="background-image: url('/static/images/bghero.jpg');"></div>
+    
+    <div class="relative z-10 animate-fadeIn" data-aos="fade-up">
+      <!-- Title -->
+      <h1 class="text-4xl md:text-6xl font-bold leading-tight">Welcome to Stones Web</h1>
+      <p class="mt-6 text-lg md:text-xl max-w-3xl mx-auto">Empowering Builders with Modern Web Solutions. We help you bring your business ideas to life with our innovative web development services.</p>
+      
+      <!-- Business Philosophy/Key Points -->
+      <div class="mt-8 text-lg md:text-xl max-w-3xl mx-auto space-y-4">
+        <p>At Stones Web, we are committed to delivering tailor-made solutions for builders, helping them streamline their operations and grow their business in the digital world.</p>
+      </div>
+      
+      <!-- Call to Action Button -->
+      <a id="click" href="#services" class="mt-8 inline-block bg-yellow-300 text-gray-900 px-8 py-4 rounded-full font-medium hover:bg-yellow-400 transition-all duration-300">
+        Explore Our Services
+      </a>
+    </div>
+  
+    <!-- Scroll Down Indicator -->
+    <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+      <a id="click" href="#services">
+        <i class="fas fa-chevron-down text-3xl text-yellow-300"></i>
+      </a>
+    </div>
+  </section>
+    </body>
+    </html>
+    
